@@ -1,0 +1,491 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vantela</title>
+    <link rel="stylesheet" href="./src/output.css" />
+    <link rel="stylesheet" href="./style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <header>
+      <div class="container flex justify-between items-center">
+        <a href="./index.html">
+          <h1
+            class="logo font-normal text-[40px] leading-[70px] text-blue-900 inline"
+          >
+            vantela
+          </h1></a
+        >
+        <ul class="flex justify-between items-center gap-4">
+          <li class="p-2">
+            <a
+              href="./index.html"
+              class="font-medium text-[14px] leading-[17px] text-gray-600 hover:text-blue-900"
+            >
+              Home
+            </a>
+          </li>
+          <li>
+            <a
+              href="./pages/about.html"
+              class="font-medium text-[14px] leading-[17px] text-gray-600 hover:text-blue-900"
+            >
+              Sneakers
+            </a>
+          </li>
+          <li>
+            <a
+              href="#"
+              class="font-medium text-[14px] leading-[17px] text-gray-600 hover:text-blue-900"
+            >
+              Slip On
+            </a>
+          </li>
+          <li>
+            <a
+              href="#"
+              class="font-medium text-[14px] leading-[17px] text-gray-600 hover:text-blue-900"
+            >
+              Sandals
+            </a>
+          </li>
+          <li>
+            <a
+              href="#"
+              class="font-medium text-[14px] leading-[17px] text-gray-600 hover:text-blue-900"
+            >
+              Other
+            </a>
+          </li>
+        </ul>
+        <ul class="flex items-center gap-4">
+          <li>
+            <i class="fa-regular fa-message text-blue-900 gap-[2px]"></i>
+          </li>
+          <li>
+            <i class="fa-regular fa-heart text-blue-900 gap-[2px]"></i>
+          </li>
+          <li>
+            <i class="fa-regular fa-bag-shopping text-blue-900 gap-[2px]"></i>
+          </li>
+        </ul>
+        <div class="gap-6">
+          <a
+            href="#"
+            class="py-3 px-4 font-bold text-xs rounded-[71px] text-white bg-blue-900 border border-blue-900 font-inter hover:opacity-50"
+            >Sign Up</a
+          >
+          <a
+            href="#"
+            class="py-3 px-4 font-bold text-xs rounded-[71px] text-blue-900 bg-white border border-blue-900 font-inter hover:bg-gray-500"
+            >Sign In</a
+          >
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="py-[45px] hero">
+        <div class="container flex justify-between">
+          <div class="text-content">
+            <h1
+              class="logo font-normal text-[117px] leading-[206px] text-blue-900"
+            >
+              vantela
+            </h1>
+            <p class="font-bold text-[39px] leading-[47px] text-yellow-500">
+              PUBLIC HIGH <span class="font-normal">GUM NATURAL</span>
+            </p>
+            <p
+              class="font-normal text-xs tracking-[-2%] text-justify w-[467px] mt-[18px]"
+            >
+              It was popularised in the 1960s with the release of Letraset
+              sheets containing Lorem Ipsum passages, and more recently with
+              desktop publishing
+            </p>
+            <a
+              class="py-3 px-4 font-bold text-xs rounded-[71px] text-white bg-blue-900 border border-blue-900 font-inter mt-8 hover:opacity-50"
+              href="#"
+              >Shop Now</a
+            >
+          </div>
+          <div
+            class="carousel flex flex-col items-center overflow-hidden mt-[-50px]"
+          >
+            <div class="carousel-container flex transition-transform">
+              <div class="carousel-slide min-w-full h-auto active first">
+                <img
+                  class="carousel-img"
+                  src=""
+                  alt=""
+                  width="400"
+                  height="100"
+                />
+              </div>
+              <div class="carousel-slide min-w-full h-auto">
+                <img
+                  class="carousel-img"
+                  src=""
+                  alt=""
+                  width="400"
+                  height="100"
+                />
+              </div>
+              <div class="carousel-slide min-w-full h-auto">
+                <img
+                  class="carousel-img"
+                  src=""
+                  alt=""
+                  width="400"
+                  height="100"
+                />
+              </div>
+              <input type="radio" name="radio-btn" id="radio1" />
+              <input type="radio" name="radio-btn" id="radio2" />
+              <input type="radio" name="radio-btn" id="radio3" />
+              <div class="navigation-auto">
+                <div class="auot-btn1"></div>
+                <div class="auot-btn2"></div>
+                <div class="auot-btn3"></div>
+              </div>
+            </div>
+            <div class="navigation-manual">
+              <label for="radio1" class="manual-btn"></label>
+              <label for="radio2" class="manual-btn"></label>
+              <label for="radio3" class="manual-btn"></label>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="popular mt-20">
+        <div class="container">
+          <div class="py-8 px-10 rounded-[184px] bg-gray-200 mb-10">
+            <div class="flex justify-between">
+              <p
+                class="font-bold italic font-serif text-blue-900 text-[26px] leading-[38px]"
+              >
+                Most<span class="not-italic font-semibold text-2xl">
+                  Popular</span
+                >
+              </p>
+              <div class="flex items-center gap-6">
+                <button id="left-popular-btn">
+                  <img src="./images/left.png" alt="" width="24" height="24" />
+                </button>
+                <button id="right-popular-btn">
+                  <img src="./images/right.png" alt="" width="24" height="24" />
+                </button>
+              </div>
+            </div>
+          </div>
+          <ul class="popular-list flex justify-between py-10">
+            <template id="popular-template">
+              <li class="wrap-item flex flex-col justify-between p-3">
+                <img
+                  class="card-popular-img"
+                  src=""
+                  alt=""
+                  width="242"
+                  height="242"
+                />
+                <h2
+                  class="mt-6 card-popular-title font-semibold text-[19px] leading-[22px]"
+                ></h2>
+                <p
+                  class="card-popular-price font-normal text-[12px] leading-[14px]"
+                ></p>
+                <div
+                  class="card-rating-btn items-center justify-between hidden"
+                >
+                  <div class="flex items-center">
+                    <i class="fa-solid fa-star text-yellow-400"></i>
+                    <p class="font-medium text-3 leading-[15px]">
+                      <span
+                        class="card-popular-rating font-medium text-xs text-black"
+                      ></span
+                      >/5
+                    </p>
+                  </div>
+                  <a
+                    class="py-3 px-4 font-bold text-xs rounded-[71px] text-white bg-blue-900 border border-blue-900 font-inter mt-8 hover:opacity-50"
+                    href="#"
+                    >Shop now</a
+                  >
+                </div>
+              </li>
+            </template>
+          </ul>
+        </div>
+      </section>
+      <section class="discount">
+        <div class="container">
+          <div class="py-8 px-10 rounded-[184px] bg-gray-200">
+            <div class="flex justify-between">
+              <p
+                class="font-bold italic font-serif text-blue-900 text-[26px] leading-[38px]"
+              >
+                On<span class="not-italic font-semibold text-2xl"> sale</span>
+              </p>
+              <div class="flex items-center gap-6">
+                <button id="left-discount-btn">
+                  <img src="./images/left.png" alt="" width="24" height="24" />
+                </button>
+                <button id="right-discount-btn">
+                  <img src="./images/right.png" alt="" width="24" height="24" />
+                </button>
+              </div>
+            </div>
+          </div>
+          <ul class="discount-list flex justify-between py-10">
+            <template id="discount-template">
+              <li class="wrap-item flex flex-col justify-between p-3 relative">
+                <a
+                  href="#"
+                  class="absolute px-2 py-1 bg-yellow-400 rounded-[16px] text-black font-semibold text-[7px] leading-[9px] left-[50px] z-10"
+                >
+                  Disc <span class="percentage"> </span> %
+                </a>
+                <img
+                  class="card-discount-img"
+                  src=""
+                  alt=""
+                  width="242"
+                  height="242"
+                />
+                <h2
+                  class="card-discount-title mt-6 font-semibold text-[19px] leading-[22px]"
+                ></h2>
+                <p class="card-discount-old-price line-through opacity-50"></p>
+                <p class="card-discount-price"></p>
+                <div
+                  class="card-rating-btn items-center justify-between hidden"
+                >
+                  <div class="flex items-center">
+                    <i class="fa-solid fa-star text-yellow-400"></i>
+                    <p class="font-medium text-xs text-black">
+                      <span class="card-popular-rating"></span>/5
+                    </p>
+                  </div>
+                  <a
+                    class="py-3 px-4 font-bold text-xs rounded-[71px] text-white bg-blue-900 border border-blue-900 font-inter mt-8 hover:opacity-50"
+                    href="#"
+                    >Shop now</a
+                  >
+                </div>
+              </li>
+            </template>
+          </ul>
+        </div>
+      </section>
+      <section class="py-10">
+        <div class="container">
+          <!-- <div class="w-64 carousel rounded-box">
+            <div class="carousel-item w-full">
+              <img
+                src="https://cdn.dummyjson.com/products/images/furniture/Wooden%20Bathroom%20Sink%20With%20Mirror/1.png"
+                class="w-full img-bottom"
+                alt="Tailwind CSS Carousel component"
+                width="1130"
+                height="1130"
+              />
+            </div>
+            <div class="carousel-item w-full">
+              <img
+                src="https://cdn.dummyjson.com/products/images/groceries/Apple/1.png"
+                class="w-full img-bottom"
+                alt="Tailwind CSS Carousel component"
+                width="1130"
+                height="1130"
+              />
+            </div>
+            <div class="carousel-item w-full">
+              <img
+                src="https://cdn.dummyjson.com/products/images/groceries/Beef%20Steak/1.png"
+                class="w-full img-bottom"
+                alt="Tailwind CSS Carousel component"
+                width="1130"
+                height="1130"
+              />
+            </div>
+            <div class="carousel-item w-full">
+              <img
+                src="https://cdn.dummyjson.com/products/images/groceries/Chicken%20Meat/1.png"
+                class="w-full img-bottom"
+                alt="Tailwind CSS Carousel component"
+                width="1130"
+                height="1130"
+              />
+            </div>
+            <div class="carousel-item w-full">
+              <img
+                src="https://cdn.dummyjson.com/products/images/groceries/Cooking%20Oil/1.png"
+                class="w-full img-bottom"
+                alt="Tailwind CSS Carousel component"
+                width="1130"
+                height="1130"
+              />
+            </div>
+          </div> -->
+          <div class="h-96 carousel rounded-box">
+            <div class="carousel-item h-full">
+              <img
+                src="https://img.daisyui.com/images/stock/photo-1559703248-dcaaec9fab78.jpg"
+              />
+            </div>
+            <div class="carousel-item h-full">
+              <img
+                src="https://img.daisyui.com/images/stock/photo-1565098772267-60af42b81ef2.jpg"
+              />
+            </div>
+            <div class="carousel-item h-full">
+              <img
+                src="https://img.daisyui.com/images/stock/photo-1572635148818-ef6fd45eb394.jpg"
+              />
+            </div>
+            <div class="carousel-item h-full">
+              <img
+                src="https://img.daisyui.com/images/stock/photo-1494253109108-2e30c049369b.jpg"
+              />
+            </div>
+            <div class="carousel-item h-full">
+              <img
+                src="https://img.daisyui.com/images/stock/photo-1550258987-190a2d41a8ba.jpg"
+              />
+            </div>
+            <div class="carousel-item h-full">
+              <img
+                src="https://img.daisyui.com/images/stock/photo-1559181567-c3190ca9959b.jpg"
+              />
+            </div>
+            <div class="carousel-item h-full">
+              <img
+                src="https://img.daisyui.com/images/stock/photo-1601004890684-d8cbf643f5f2.jpg"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="bg-blue-900 py-20">
+      <div class="container">
+        <div class="flex justify-between items-end mb-20">
+          <a href="./index.html">
+            <h1
+              class="logo font-normal text-[40px] leading-[70px] text-white inline"
+            >
+              vantela
+            </h1></a
+          >
+          <a class="flex py-4 px-8 bg-white rounded-[48px] gap-20" href="#">
+            <p class="font-normal text-[14px] leading-[16.94px] text-gray-500">
+              Subscribe to our newsletter ...
+            </p>
+            <img src="./images/right.png" alt="" width="16" height="16" />
+          </a>
+        </div>
+        <ul class="flex gap-40 text-white">
+          <li class="">
+            <h2 class="mb-8 font-medium text-[24px] leading-[29px]">Company</h2>
+            <ul class="flex flex-col gap-4">
+              <li>
+                <a class="underline" href="./pages/about.html">About us</a>
+              </li>
+              <li>
+                <a class="underline" href="#">Our store</a>
+              </li>
+              <li>
+                <a class="underline" href="#">News</a>
+              </li>
+            </ul>
+          </li>
+          <li class="">
+            <h2 class="mb-8 font-medium text-[24px] leading-[29px]">Help</h2>
+            <ul class="flex flex-col gap-4">
+              <li>
+                <a class="underline" href="#">FAQ</a>
+              </li>
+              <li>
+                <a class="underline" href="#">Help</a>
+              </li>
+              <li>
+                <a class="underline" href="#">Terms</a>
+              </li>
+            </ul>
+          </li>
+          <li class="">
+            <h2 class="mb-8 font-medium text-[24px] leading-[29px]">
+              Social Media
+            </h2>
+            <ul class="flex flex-col gap-4">
+              <li>
+                <a
+                  class="underline flex items-center gap-2"
+                  href="https://facebook.com"
+                  target="_blank"
+                >
+                  <i class="fa-brands fa-facebook"></i>
+                  <span>Facebook</span>
+                </a>
+              </li>
+              <li>
+                <a
+                  class="underline flex items-center gap-2"
+                  href="https://tiktok.com"
+                  target="_blank"
+                >
+                  <i class="fa-brands fa-tiktok"></i>
+                  <span>Tiktok</span>
+                </a>
+              </li>
+              <li>
+                <a
+                  class="underline flex items-center gap-2"
+                  href="https://instagram.com"
+                  target="_blank"
+                >
+                  <i class="fa-brands fa-instagram"></i>
+                  <span>Instagram</span>
+                </a>
+              </li>
+            </ul>
+          </li>
+          <li class="">
+            <h2 class="mb-8 font-medium text-[24px] leading-[29px]">Contact</h2>
+            <ul class="flex flex-col gap-4">
+              <li>Sukaasih, Kota Tangerang, Banten 15111</li>
+              <li>Phone : 0976444677</li>
+              <li>Mail : adminvantela@domain.com</li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </footer>
+    <section class="py-6 bg-blue-950">
+      <div class="container flex justify-center items-center">
+        <p class="text-white p-2 text-[14px]">
+          Copyright 2023. All Right Reserverd
+        </p>
+      </div>
+    </section>
+
+    <!-- OVERLAY LOADING -->
+    <div class="overlay absolute hidden left-0 top-0 bottom-0 right-0">
+      <span
+        class="loading loading-dots fixed loading-lg left-[50%] top-[50%] translate-x-[-50%] translate-y-[-50%]"
+      ></span>
+    </div>
+
+    <script type="module" src="./js/request.js"></script>
+    <script type="module" src="./js/loading.js"></script>
+    <script type="module" src="./js/index.js"></script>
+  </body>
+</html>
