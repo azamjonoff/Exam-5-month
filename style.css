@@ -215,3 +215,10 @@ main {
   column-gap: 16px;
   row-gap: 16px;
 }
+
+#see-more-btn {
+  padding: 10px;
+  border-radius: 8px;
+  color: white;
+  margin-bottom: 10px;
+}

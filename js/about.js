@@ -16,11 +16,11 @@ const updateUI = (data) => {
 
   data
     .sort((a, b) => b.rating - a.rating)
-    .slice(0, 8)
+    .slice(0, limit.length)
     .forEach((prod) => {
       const clonemen = tempMen.content.cloneNode(true);
-      const cardmenImg = clonemen.querySelector(".card-men-img");
-      cardmenImg.setAttribute("src", prod.images[0]);
+      const cardMenImg = clonemen.querySelector(".card-men-img");
+      cardMenImg.setAttribute("src", prod.images[0]);
 
       const title = clonemen.querySelector(".card-men-title");
       title.textContent = prod.title;
@@ -31,12 +31,26 @@ const updateUI = (data) => {
       const rating = clonemen.querySelector(".card-men-rating");
       rating.textContent = prod.rating;
 
+      // const persentageWrap = document.querySelector(".persentage-wrap");
+      const persentage = clonemen.querySelector(".percentage");
+      if (prod.discountPercentage > 17) {
+        persentage.textContent = ` ${prod.discountPercentage} `;
+        // persentage.parentElement.display = "flex";
+        // persentageWrap.style.display = "flex";
+      }
+
+      const seeMoreBtn = document.querySelector("#see-more-btn");
+
+      seeMoreBtn.addEventListener("click", () => {
+        limit + 8;
+      });
+
       menList.appendChild(clonemen);
     });
 
   data
-    .sort((a, b) => b.womenPercentage - a.womenPercentage)
-    .slice(0, 8)
+    .sort((a, b) => b.discountPercentage - a.discountPercentage)
+    .slice(0, limit.length)
     .forEach((prod) => {
       const cloneWomen = tempWomen.content.cloneNode(true);
       const img = cloneWomen.querySelector(".card-women-img");
@@ -57,13 +71,13 @@ const updateUI = (data) => {
       const persentage = cloneWomen.querySelector(".percentage");
       if (prod.discountPercentage > 17) {
         persentage.textContent = ` ${prod.discountPercentage} `;
-        persentage.style.display = "flex";
+        // persentage.style.display = "flex";
       }
 
       const rating = cloneWomen.querySelector(".card-men-rating");
       rating.textContent = prod.rating;
 
-      womenList.appendChild(cloneWomen);
+      womenList.append(cloneWomen);
     });
 
   //   const imgBottom = document.querySelectorAll(".img-bottom");
@@ -102,9 +116,9 @@ function moveSlide(n) {
 
 showSlides();
 
-// const limit = 12;
+const limit = 8;
 
-getData(`https://dummyjson.com/products?limit=194`)
+getData(`https://dummyjson.com/products?limit=${limit}`)
   .then((data) => {
     updateUI(data.products);
   })
