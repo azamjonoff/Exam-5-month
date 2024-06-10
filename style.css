@@ -222,3 +222,18 @@ main {
   color: white;
   margin-bottom: 10px;
 }
+
+.product-item {
+  padding: 10px;
+  margin: 5px;
+  border: 1px solid #ccc;
+}
+.product-container {
+  margin: 20px;
+}
+#loadMoreBtn {
+  display: block;
+  margin: 20px auto;
+  padding: 10px 20px;
+  cursor: pointer;
+}

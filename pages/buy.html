@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vantela | Buy now</title>
+    <link rel="stylesheet" href="../style.css" />
+    <link rel="stylesheet" href="../src/output.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <header>
+      <div class="container flex justify-between items-center">
+        <a href="../index.html">
+          <h1
+            class="logo font-normal text-[40px] leading-[70px] text-blue-900 inline"
+          >
+            vantela
+          </h1></a
+        >
+        <ul class="flex justify-between items-center gap-4">
+          <li class="p-2">
+            <a
+              href="../index.html"
+              class="font-medium text-[14px] leading-[17px] text-gray-600 hover:text-blue-900"
+            >
+              Home
+            </a>
+          </li>
+          <li>
+            <a
+              href="./about.html"
+              class="font-medium text-[14px] leading-[17px] text-gray-600 hover:text-blue-900"
+            >
+              Sneakers
+            </a>
+          </li>
+          <li>
+            <a
+              href="#"
+              class="font-medium text-[14px] leading-[17px] text-gray-600 hover:text-blue-900"
+            >
+              Slip On
+            </a>
+          </li>
+          <li>
+            <a
+              href="#"
+              class="font-medium text-[14px] leading-[17px] text-gray-600 hover:text-blue-900"
+            >
+              Sandals
+            </a>
+          </li>
+          <li>
+            <a
+              href="#"
+              class="font-medium text-[14px] leading-[17px] text-gray-600 hover:text-blue-900"
+            >
+              Other
+            </a>
+          </li>
+        </ul>
+        <ul class="flex items-center gap-4">
+          <li>
+            <i class="fa-regular fa-message text-blue-900 gap-[2px]"></i>
+          </li>
+          <li>
+            <i class="fa-regular fa-heart text-blue-900 gap-[2px]"></i>
+          </li>
+          <li>
+            <i class="fa-regular fa-bag-shopping text-blue-900 gap-[2px]"></i>
+          </li>
+        </ul>
+        <div class="gap-6">
+          <a
+            href="#"
+            class="py-3 px-4 font-bold text-xs rounded-[71px] text-white bg-blue-900 border border-blue-900 font-inter hover:opacity-50"
+            >Sign Up</a
+          >
+          <a
+            href="#"
+            class="py-3 px-4 font-bold text-xs rounded-[71px] text-blue-900 bg-white border border-blue-900 font-inter hover:bg-gray-500"
+            >Sign In</a
+          >
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section id="buySection" class="buy-section">
+        <template id="buyTemplate">
+          <div class="buy-content">
+            <div class="buy-content-wrapper">
+              <img class="buy-img" src="" alt="" />
+              <div class="buy-details">
+                <div class="buy-discount-share">
+                  <div class="buy-discount">Disc50%</div>
+                  <div class="buy-share-icons">
+                    <a href="#">
+                      <img
+                        class="buy-like-icon"
+                        src="../images/buy/outline_like.png"
+                        alt=""
+                      />
+                    </a>
+                    <a href="#">
+                      <img
+                        class="buy-share-icon"
+                        src="../images/buy/share.png"
+                        alt=""
+                      />
+                    </a>
+                  </div>
+                </div>
+                <div class="buy-pricing">
+                  <h1 class="buy-title">Vantela New Public White low</h1>
+                  <p class="buy-oldprice">Rp 299.990</p>
+                  <p class="buy-newprice">Rp 149.995</p>
+                  <div class="buy-actions">
+                    <button class="buy-message-btn">
+                      <img src="../images/buy/message-buy.svg" alt="" />
+                    </button>
+                    <button class="buy-add-btn">+ Add to cart</button>
+                    <button class="buy-buy-btn">Buy Now</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <ul class="buy-links">
+              <li class="buy-link-item">
+                <a class="buy-link" href="#">Details</a>
+              </li>
+              <li class="buy-link-item">
+                <a class="buy-link" href="#">Review</a>
+              </li>
+              <li class="buy-link-item">
+                <a class="buy-link" href="#">Similar buys</a>
+              </li>
+            </ul>
+          </div>
+        </template>
+      </section>
+    </main>
+    <script type="module" src="../js/request.js"></script>
+    <script type="module" src="../js/index.js"></script>
+    <script type="module" src="../js/buy.js"></script>
+  </body>
+</html>

@@ -33,6 +33,9 @@ const updateUI = (data) => {
       const rating = clonePopular.querySelector(".card-popular-rating");
       rating.textContent = prod.rating;
 
+      const btnShop = clonePopular.querySelector(".btn-shop");
+      // btnShop.href = `./pages/buy.html?id=${prod.id}`;
+
       popularList.appendChild(clonePopular);
     });
 
@@ -64,6 +67,9 @@ const updateUI = (data) => {
 
       const rating = cloneDiscount.querySelector(".card-popular-rating");
       rating.textContent = prod.rating;
+
+      const btnShop = cloneDiscount.querySelector(".btn-shop");
+      btnShop.href = `./pages/buy.html?id=${prod.id}`;
 
       discountList.appendChild(cloneDiscount);
     });
